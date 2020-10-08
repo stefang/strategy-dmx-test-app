@@ -10,6 +10,7 @@ This app only works in Electron, you cannot access the serial port from a web br
 
 In the project directory, you can run:
 
+### `npm install`
 ### `npm start`
 
 to launch the electron app.

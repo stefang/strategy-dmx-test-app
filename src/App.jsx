@@ -3,6 +3,7 @@ import './App.css'
 import { createDeviceDispatchable } from '@iotes/core'
 import { createIotes } from '@iotes/react-hooks'
 import { dmxStrategy } from '@iotes/strategy-dmx'
+import * as brightsignBindings from './serial-bindings/bs-binding'
 
 const topology = {
   client: {
@@ -12,6 +13,7 @@ const topology = {
     name: 'dmx-host',
     host: 'enttec-usb-dmx-pro',
     port: '/dev/cu.usbserial-EN085546',
+    serialbindings: brightsignBindings,
   }],
   devices: [{
     hostName: 'dmx-host',
